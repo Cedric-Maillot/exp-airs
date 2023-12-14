@@ -1,5 +1,5 @@
 import streamlit as st
 
-message = "Hello world !"
+message = "Bonjour le monde !"
 
 st.write(message)
