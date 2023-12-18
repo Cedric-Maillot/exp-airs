@@ -57,26 +57,18 @@ def time_series_concentration_polluant(
         y=seuil_information_recommendation,
         line_width=1,
         line_color="rgb(256, 126, 0)",
-        label=dict(
-            text="seuil d'information et de recommendation",
-            textposition="bottom right",
-            font=dict(
-                color="rgb(256, 126, 0)"
-            )
-        )
+        annotation_text="seuil d'information et de recommendation", 
+        annotation_position="bottom right",
+        annotation_font_color="rgb(256, 126, 0)"
     )
     # seuil d'alerte (plotly version 5.14 or higher)
     fig.add_hline(
         y=seuil_alerte,
         line_width=1,
         line_color="rgb(204, 0, 0)",
-        label=dict(
-            text="seuil d'alerte",
-            textposition="top right",
-            font=dict(
-                color="rgb(204, 0, 0)"
-            )
-        )
+        annotation_text="seuil d'alerte", 
+        annotation_position="top right",
+        annotation_font_color="rgb(204, 0, 0)"
     )
 
     information_highlighted = filtered_df[filtered_df["seuil_information"] == 1]
