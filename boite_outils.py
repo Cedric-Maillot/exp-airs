@@ -48,7 +48,8 @@ def time_series_concentration_polluant(
         )
     )
     # seuil d'alerte (plotly version 5.14 or higher)
-    fig.add_hline(y=seuil_alerte,
+    fig.add_hline(
+        y=seuil_alerte,
         line_width=1,
         line_color="rgb(204, 0, 0)",
         label=dict(
